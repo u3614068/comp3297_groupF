@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta
+            name = "viewpoint"
+            content = "width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>{% block title %} UniHaven {% endblock %}</title>
+    <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    rel="stylesheet">
 </head>
 <body>
+    <div id="container">
+        <div id="header">
+            <h1 id="logo">
+                <a href="http://hku.hk" alt="visit HKU Website" title="visit HKU Website" target="_blank">
+                    <img alt="HKU logo" title="HKU logo" src="https://hku.hk/assets/img/hku-logo.svg?t=1678891777">
+                </a>
+                <a href="http://www.cedars.hku.hk" alt="Visit CEDARS" title="Visit CEDARS" target="_blank">
+                    <img alt="CEDARS logo" title="CEDARS logo" src="https://w2.cedars.hku.hk/accomRental/img/logo.png">
+                </a>
+                <a href="./" alt="Visit Home page" title="Visit Home page">
+                    <img alt="Logo" title="Logo" src="https://w2.cedars.hku.hk/accomRental/img/logo_AS.png" style="float:right;height:74px;margin-top:20px;">
+            </h1>
+        </div>
+    </div>
 
+    <div class="container">{% block content %}{% endblock %}</div>
 </body>
 </html>
